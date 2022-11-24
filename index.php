@@ -1,11 +1,3 @@
-<!-- php block code -->
-<?php 
-    echo "test";
-?>
-<!-- /php block code -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,9 +16,24 @@
 </head>
 
 <body>
-    <form action="response.php">
-        <button type="check">CHECK</button>
-    </form>
+
+    <h1>Bad Words Replacer</h1>
+
+    <!-- container -->
+    <div class="container">
+        <form action="response.php" method="GET">
+
+            <!-- use input -->
+            <label for="text">
+                <input type="text" name="text" id="text" placeholder="Type a text...">
+            </label>
+            <!-- /user input -->
+
+            <button type="check">RESPONSE</button>
+        </form>
+    </div>
+    <!-- /container -->
+
 </body>
 
 </html>

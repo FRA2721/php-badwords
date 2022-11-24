@@ -1,6 +1,10 @@
 <!-- php block code -->
 <?php
+// get requests
+$paragraph = $_GET["text"];
 
+// input request length
+$paragraphLength = strlen($paragraph);
 ?>
 <!-- /php block code -->
 
@@ -25,9 +29,17 @@
 
 <body>
 
-    <a href="index.php">
-        <h2>WELL DONE!</h2>
-    </a> 
+    <!-- original paragraph section -->
+    <h2>Original paragraph:</h2>
+    <p><?php echo $paragraph?></p>
+
+    <br>
+
+    <h3>Length for original paragraph:</h3>
+    <p><?php echo $paragraphLength?></p>
+    <!-- /original paragraph section -->
+
+    <a href="index.php">HOME</a> 
 
 </body>
 </html>
