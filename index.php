@@ -27,9 +27,16 @@
             <label for="text">
                 <input type="text" name="text" id="text" placeholder="Type a text...">
             </label>
+
+            <label for="bad-word">
+                <input type="text" name="bad-word" id="bad-word" placeholder="Type a word that you want to censor:">
+            </label>
             <!-- /user input -->
 
+            <!-- send user data -->
             <button type="check">RESPONSE</button>
+            <!-- /send user data -->
+            
         </form>
     </div>
     <!-- /container -->

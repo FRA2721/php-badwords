@@ -1,10 +1,14 @@
 <!-- php block code -->
 <?php
-// get requests
+// original paragraph
 $paragraph = $_GET["text"];
-
-// input request length
+// original paragraph length
 $paragraphLength = strlen($paragraph);
+
+// formatted paragraph 
+$formattedParagraph = str_replace($_GET["bad-word"], "(***)", $paragraph);
+// formatted paragraph length
+$formattedParagraphLength = strlen($formattedParagraph);
 ?>
 <!-- /php block code -->
 
@@ -38,6 +42,16 @@ $paragraphLength = strlen($paragraph);
     <h3>Length for original paragraph:</h3>
     <p><?php echo $paragraphLength?></p>
     <!-- /original paragraph section -->
+
+    <!-- formatted paragraph section -->
+    <h2>Formatted paragraph:</h2>
+    <p><?php echo $formattedParagraph?></p>
+
+    <br>
+
+    <h3>Length for formatted paragraph:</h3>
+    <p><?php echo $formattedParagraphLength?></p>
+    <!-- /formatted paragraph section -->
 
     <a href="index.php">HOME</a> 
 
